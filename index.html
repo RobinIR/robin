@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <met#aeb3b8et="utf-8">
+        <title>DarkCV - Bootstrap CV Resume Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <script>
+            $(document).ready(function() {
+                // Smooth scrolling when clicking on navigation links
+                $('.nav-link').click(function(e) {
+                    e.preventDefault();
+                    var target = $(this).attr('href');
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top
+                    }, 1000); // Adjust the animation speed here (in milliseconds)
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#publication">Publication</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certificate">Certificate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br> <br> <br>
+
+        <div class="container content">
+            <div class="row profile-row g-5">
+                <div class="col-lg-4 profile-col sticky-lg-top">
+                    <div class="profile-container shadow">
+                        <img class="img-fluid profile" src="img/profile1.jpg" alt="Image">
+                        <div class="CV d-flex justify-content-center mt-5">
+                            <a href="cv/cv.pdf" class="btn" download>
+                                 Download CV <i class="bi bi-download"></i>
+                            </a>
+                        </div>
+                        <div class="links d-flex justify-content-center mt-5 mb-3">
+                            <a class="btn btn-primary btn-square mx-1" href="https://github.com/RobinIR" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-primary btn-square mx-1" href="https://www.linkedin.com/in/robin-kuri/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square mx-1" href="https://www.instagram.com/robin.kuri/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="col-lg-8">
+                    <!-- About Start -->
+                    <section class="py-1 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="home">
+            
+                        <h1 class="text">Robin Kuri</h1>
+                        <div class="mb-4" style="height: 22px;">
+                            <h4 class="typed-text-output d-inline-block text-primary"></h4>
+                            <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer</div>
+                        </div>
+                        <p align="justify">
+                            As a software developer or programmer, I have been exploring the world of software for more than 2 years. I really enjoy learning new tech stuff and using my own ideas to build cool things. I also like talking to people and working well in teams. During my master's project, I led a group of talented people in creating our enormous master's project together. I love listening to music and dancing – they're like my happy places. I think music helps me be more creative when I'm coding. 
+                            <br><br>
+                            I'm a tech explorer, a team player, and a bit of a music-loving dancer too!
+                        </p>
+                        
+                        <div class="row mb-4">
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Name:</span> Robin Kuri
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Birthday:</span> 13 June 1994
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Degree:</span> Master
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Experience:</span> 2 Years+
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Phone:</span> +491639717862
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Email:</span> robin4@uni-bremen.de
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Address:</span> Luisental 28, 28359 Bremen
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Freelance:</span> Available
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <!-- About End -->
+
+                    <!-- Skills Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="skills">
+                        <h1 class="title pb-3 mb-5">Skills</h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">HTML</p>
+                                        <p class="mb-2">95%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">CSS</p>
+                                        <p class="mb-2">85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Python</p>
+                                        <p class="mb-2">80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Neo4J</p>
+                                        <p class="mb-2">70%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">GraphQL</p>
+                                        <p class="mb-2">70%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Javascript</p>
+                                        <p class="mb-2">80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Angular</p>
+                                        <p class="mb-2">80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Docker</p>
+                                        <p class="mb-2">60%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">MongoDB</p>
+                                        <p class="mb-2">50%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Skills End -->
+
+                    <!-- Expericence Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="experience">
+                        <h1 class="title pb-3 mb-5">Expericence</h1>
+                        <div class="border-0 pt-2 ps-5">
+                           
+                            <div class="position-relative mb-4">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="position-absolute" style="top: -5px; left: -50px;"><path fill="#00B87B" d="M19.5 14.5q-.775 0-1.4-.425T17.2 13H2v-2h15.2q.275-.65.9-1.075t1.4-.425q1.05 0 1.775.725T22 12q0 1.05-.725 1.775T19.5 14.5Z"/></svg>
+                                
+                                <h5 class="mb-1 text-primary">Software Developer</h5>
+                                <a href="https://www.biba.uni-bremen.de/" target="_blank">  
+                                    <img src="img/biba.png" alt="" width="100px" height="45px">
+                                </a>
+                                <p class="mb-2">BIBA-Bremer Institut für Produktion und Logistik GmbH &nbsp; &nbsp;| &nbsp; &nbsp; <span class="text-primary">Mar 2022 - Present</span></p>
+                                <ul class="row center justify-content-around">
+                                    <li>Developed Qualiexplore website, transitioning it from static to dynamic framework.</li>
+                                    <li>Resolved front-end issues in Angular, enhancing functionality and user experience.</li>
+                                    <li>Enhanced login system security and efficiency with MongoDB and Flask.</li>
+                                    <li>Built backend API with Neo4j, following GraphQL standards.</li>
+                                    <li>Developed RASA chatbot for natural language processing and conversation management.</li>
+                                    <li>Implementing Docker-based deployment for scalable application deployment. Responsible for rewriting and building Docker images for Authentication backend and Qualiexplore front-end.</li>
+                                </ul>
+                                
+                            </div>
+                            <div class="position-relative mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="position-absolute" style="top: -5px; left: -50px;"><path fill="#00B87B" d="M19.5 14.5q-.775 0-1.4-.425T17.2 13H2v-2h15.2q.275-.65.9-1.075t1.4-.425q1.05 0 1.775.725T22 12q0 1.05-.725 1.775T19.5 14.5Z"/></svg>
+                                <h5 class="mb-2 text-primary">Web Developer</h5>
+                                <a href="https://www.evers-vertriebsrecht.de/" target="_blank">  
+                                    <img src="img/evers.png" alt="" width="200px" height="45px">
+                                </a>
+                               
+                                <p class="mb-2">Evers Rechtsanwälte für Vertriebsrecht &nbsp; &nbsp;| &nbsp; &nbsp; <span class="text-primary">Aug 2021 - Feb 2022</span></p>
+                                <ul>
+                                    <li>Developed engaging user interfaces with HTML5, CSS3, Angular, and GSAP animation for enhanced user experience and visual appeal.</li>
+                                    <li>Resolved responsive and animation bugs for seamless functionality across devicesand browsers.</li>
+                                    <li>Upgraded login and registration features with Angular, NestJS, and MongoDB,improving security and scalability.</li>
+                                </ul>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="position-absolute" style="top: -5px; left: -50px;"><path fill="#00B87B" d="M19.5 14.5q-.775 0-1.4-.425T17.2 13H2v-2h15.2q.275-.65.9-1.075t1.4-.425q1.05 0 1.775.725T22 12q0 1.05-.725 1.775T19.5 14.5Z"/></svg>
+                                <h5 class="mb-1 text-primary">Software Developer</h5>
+                                <a href="https://climactivity.de/" target="_blank">  
+                                    <img src="img/klima.png" alt="" width="200px" height="45px">
+                                </a>
+                                <p class="mb-2">Klimaschutz For ALL e. V &nbsp; &nbsp;| &nbsp; &nbsp;<span class="text-primary">Mar 2021 - Jul 2021</span></p>
+                                <ul>
+                                    <li>Developed CO2 footprint tracking functionality using PHP, JavaScript, andWordPress.</li>
+                                    <li>Utilized MySQL for seamless data storage and retrieval, integrating it with theexisting WordPress infrastructure..</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Expericence End -->
+
+                    <!-- Education Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="education">
+                        <h1 class="title pb-3 mb-5">Education</h1>
+                        <div class="border-0">
+                            
+                            <div class="position-relative mb-4">
+                                
+                
+                                <div class="d-flex align-items-center">
+                                    <a href="https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/22?cHash=70cb9b3b5ccf449ae3df8545109c361e" target="_blank">  
+                                        <img src="img/bremen.png" alt="" width="100px" height="105px">
+                                    </a>
+                                    <div class="ms-5 mt-2 text">
+                                        <h5 class="text-primary">University of Bremen, Germany</h5>
+                                        <h6>Masters of Science (MSc)</h5>
+                                        <h6>Digital Media</h4>
+                                    </div>
+                                    
+                                </div>
+                                
+                               
+                                
+                            </div>
+                            <div class="position-relative mb-4">
+                                <div class="d-flex align-items-center" >
+                                    <a href="https://nstu.edu.bd/cste.html" target="_blank">  
+                                        <img src="img/NSTU-logo.gif" alt="" width="100px" height="150px">
+                                    </a>
+                                    <div class="ms-5 mt-2">
+                                        <h5 class="text-primary">Noakhali Science and Technology University, Bangladesh</h5>
+                                        <h6>Bachelor of Science (BSc)</h5>
+                                        <h6>Computer Science and Telecommunication Engineering</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Education  End -->
+
+                    <!-- Publication Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="publication">
+                        <h1 class="title pb-3 mb-5">Publication</h1>
+                        <div class="border-0">
+                            
+                            <div class="position-relative mb-4">
+                                
+                
+                                <div class="d-flex align-items-center">
+                                    <a href="" target="_blank">     
+                                    </a>
+                                    <a class="btn btn-dark" href="https://www.researchgate.net/publication/354477479_Design_and_Development_of_a_Single-Axis_Solar_Tracking_System" target="_blank"><i class="fa fa-link" style="font-size:25px;"></i></a>
+                                    <div class="ms-1 mt-2">
+                                        <a href="https://www.researchgate.net/publication/354477479_Design_and_Development_of_a_Single-Axis_Solar_Tracking_System" target="_blank">
+                                            <h5 class="text-primary">Design and Development of a Single-Axis Solar Tracking System</h5>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                             
+                            </div>
+                            <div class="position-relative mb-4">
+                                <div class="d-flex align-items-center">
+                                    <a class="btn btn-dark" href="https://www.researchgate.net/publication/341627813_ATM_Shield_Analysis_of_Multitier_Security_Issues_of_ATM_in_the_Context_of_Bangladesh" target="_blank"><i class="fa fa-link" style="font-size:25px;"></i>
+                                    </a>
+                                    <div class="ms-1 mt-2">
+                                        <a href="https://www.researchgate.net/publication/341627813_ATM_Shield_Analysis_of_Multitier_Security_Issues_of_ATM_in_the_Context_of_Bangladesh" target="_blank">
+                                            <h5 class="text-primary">ATM Shield: Analysis of Multitier Security Issues of ATM in theContext of Bangladesh</h5>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Publication  End -->
+        
+                
+                    <!-- Portfolio  Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="portfolio">
+
+                            <h1 class="title pb-3 mb-5">Portfolio</h1>
+
+                            <div class="portfolio">
+
+                                    <div class="row portfolio-container">
+                                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                            <div class="portfolio-wrap">
+                                                <figure>
+                                                    <img src="img/portfolio-1.jpg" class="img-fluid" alt="">
+                                                    <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Curabitur semper erat" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                                    <h4 class="portfolio-title">Curabitur semper erat <span>Web Design</span></h4>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                            <div class="portfolio-wrap">
+                                                <figure>
+                                                    <img src="img/portfolio-2.jpg" class="img-fluid" alt="">
+                                                    <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Maecenas a tempus tortor" title="Preview"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                                    <h4 class="portfolio-title">Maecenas a tempus tortor <span>Web Design</span></h4>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                            <div class="portfolio-wrap">
+                                                <figure>
+                                                    <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
+                                                    <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Aliquam id sapien lorem" title="Preview"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                                    <h4 class="portfolio-title">Aliquam id sapien lorem <span>Web Development</span></h4>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                            <div class="portfolio-wrap">
+                                                <figure>
+                                                    <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
+                                                    <a href="img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Quisque lectus mauris" title="Preview"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                                    <h4 class="portfolio-title">Quisque lectus mauris <span>Web Development</span></h4>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 portfolio-item app-dev">
+                                            <div class="portfolio-wrap">
+                                                <figure>
+                                                    <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
+                                                    <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Interdum et malesuada" title="Preview"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                                    <h4 class="portfolio-title">Interdum et malesuada <span>Apps Development</span></h4>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 portfolio-item app-dev">
+                                            <div class="portfolio-wrap">
+                                                <figure>
+                                                    <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
+                                                    <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Pellentesque lacus" title="Preview"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                                    <h4 class="portfolio-title">Pellentesque lacus <span>Apps Development</span></h4>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        
+                    </section> 
+                    <!-- Portfolio End -->
+                    
+        
+                    
+    
+                    <!-- Certificates Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="certificate">
+                        <h1 class="title pb-3 mb-5">Certificate</h1>
+                        <div class="owl-carousel testimonial-carousel">
+                            
+                            <div class="text-left d-flex align-items-center">
+                                <a href="img/certificate1.png" target="_blank">
+                                    <img class="img-fluid p-4" src="img/certificate1.png">
+                                </a>
+
+                                <div class="col-md py-2 ps-3 mt-5">
+                                    <p>Completed the "Programming for Everybody" course on Coursera, achieving a grade of 99.17%.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://coursera.org/share/45582495b34ab989fb6c1d8aade67c21" target="_blank">
+                                            <button class="btn btn-primary">More Here</button>
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                          
+                            <div class="text-left d-flex align-items-center">
+                                <a href="img/certificate2.png" target="_blank">
+                                    <img class="img-fluid p-4" src="img/certificate2.png">   
+                                </a>
+                               
+                                <div class="col-md py-2 ps-3 mt-5">
+                                    <p align="justify">Successfully completed the "Python Data Structures" course from the University of Michigan on Coursera, achieving a perfect score of 100%. </p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://coursera.org/share/3a234568642610f889cfb2608b83217e" target="_blank">
+                                            <button class="btn btn-primary">More here</button>
+                                        </a>
+                                    </div>
+                                      
+                                </div>
+                            </div>
+
+                            <div class="text-left d-flex align-items-center">
+                                <a href="img/linkdin-badge.png" target="_blank">
+                                    <img class="img-fluid mt-5 p-4" src="img/linkdin-badge.png" style="width: 550px; height: 100%;">   
+                                </a>
+                               
+                                <div class="col-md py-2 ps-3 mt-5">
+                                    <div class="d-flex justify-content-center ">
+                                        <p align="justify">Ranked in the top 15% - Earned Angular linkedin badge showcased on profile and in recruiter searches. </p>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://www.linkedin.com/in/robin-kuri/" target="_blank">
+                                            <button class="btn btn-primary">More here</button>
+                                        </a>
+                                    </div>
+                                      
+                                </div>
+                            </div>
+                            
+                            <div class="text-left d-flex align-items-center">
+                                <a href="img/IOT.png" target="_blank">
+                                    <img class="img-fluid p-4" src="img/IOT.png" style="width: 20vw; height: 50vh;">
+                                </a>
+                                <div class="col-md py-2 ps-3 mt-5">
+                                    <div class="d-flex justify-content-center ">
+                                        <p align="justify">Accomplished the IoT, computer science, and data science training under 
+                                            the Blended Intensive Programme at Université Sorbonne Paris Nord</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://www.linkedin.com/groups/12872240/" target="_blank">
+                                            <button class="btn btn-primary">More here</button>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="text-left d-flex align-items-center">
+                                <a href="img/hfk.jpg" target="_blank">
+                                    <img class="img-fluid p-4" src="img/hfk.jpg" style="width: 20vw; height: 50vh;">
+                                </a>
+                                <div class="col-md py-2 ps-3 mt-5">
+                                    <div class="d-flex justify-content-center ">
+                                        <p align="justify">Received the special interdisciplinary prize for the innovative project "Seven and More Workshops," which demonstrated a dynamic fusion of digital creativity across multiple disciplines.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="img/hfk.jpg" target="_blank">
+                                            <button class="btn btn-primary">More here</button>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="text-left d-flex align-items-center">
+                                <a href="img/German B1.jpg" target="_blank">
+                                    <img class="img-fluid p-4" src="img/German B1.jpg" style="width: 20vw; height: 50vh;">
+                                </a>
+                                <div class="col-md py-2 ps-3 mt-5">
+                                    <div class="d-flex justify-content-center ">
+                                        <p align="justify">Successfully attained B1 level proficiency in the German language</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="img/German B1.jpg" target="_blank">
+                                            <button class="btn btn-primary">More here</button>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- certificate End -->
+
+                    <!-- Contact Start -->
+                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+                        <h1 class="title pb-3 mb-5">Contact Me</h1>
+                        
+                        <form id="contact-form" action="https://formspree.io/f/mleygqew" method="POST" target="_blank">
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-secondary" id="name" name="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0 bg-secondary" id="email" name="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-secondary" id="subject" name="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" name="message" style="height: 200px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_cc" value="robinanr.kuri@gmail.com">
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="my-form-status"></div>
+                    </section>
+
+                    <!-- Sending Email Script -->
+
+                    <script>
+                        const form = document.getElementById('contact-form');
+                        const status = document.getElementById("my-form-status");
+                    
+                        async function handleSubmit(event) {
+                            event.preventDefault();
+                            const data = new FormData(event.target);
+                    
+                            try {
+                                const response = await fetch(event.target.action, {
+                                    method: form.method,
+                                    body: data,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                });
+                    
+                                if (response.ok) {
+                                        status.innerHTML = "<p style='text-align: center; font-weight: bold; color: #33dca5; font-size: 24px; padding: 10px;'>Thanks for your Email! </</</p>";
+                                        form.reset();
+                               } else {
+                                    const responseData = await response.json();
+                                    if (responseData.hasOwnProperty('errors')) {
+                                        status.innerHTML = responseData.errors.map(error => error.message).join(", ");
+                                    } else {
+                                        status.innerHTML = "Oops! There was a problem submitting your form.";
+                                    }
+                                }
+                            } catch (error) {
+                                status.innerHTML = "Oops! There was a problem submitting your form.";
+                            }
+                        }
+                        form.addEventListener("submit", handleSubmit);
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+ 
+</html>
