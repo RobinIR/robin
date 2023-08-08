@@ -93,3 +93,65 @@
     });
 })(jQuery);
 
+// navbar script
+
+ document.addEventListener("DOMContentLoaded", function() {
+                var navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+                navbarLinks.forEach(function(navbarLink) {
+                    navbarLink.addEventListener("click", function() {
+                        var navbarCollapse = document.querySelector(".navbar-collapse");
+                        if (navbarCollapse.classList.contains("show")) {
+                            navbarCollapse.classList.remove("show");
+                        }
+                    });
+                });
+});
+
+
+//Sending Email Script 
+
+const form = document.getElementById('contact-form');
+const status = document.getElementById("my-form-status");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    try {
+        const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+                status.innerHTML = "<p style='text-align: center; font-weight: bold; color: #33dca5; font-size: 24px; padding: 10px;'>Thanks for your Email! </</</p>";
+                form.reset();
+        } else {
+            const responseData = await response.json();
+            if (responseData.hasOwnProperty('errors')) {
+                status.innerHTML = responseData.errors.map(error => error.message).join(", ");
+            } else {
+                status.innerHTML = "Oops! There was a problem submitting your form.";
+            }
+        }
+    } catch (error) {
+        status.innerHTML = "Oops! There was a problem submitting your form.";
+    }
+}
+form.addEventListener("submit", handleSubmit);
+
+//navbar script
+
+$(document).ready(function() {
+    // Smooth scrolling when clicking on navigation links
+    $('.nav-link').click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000); // Adjust the animation speed here (in milliseconds)
+    });
+});
