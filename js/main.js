@@ -142,16 +142,3 @@ async function handleSubmit(event) {
     }
 }
 form.addEventListener("submit", handleSubmit);
-
-//navbar script
-
-$(document).ready(function() {
-    // Smooth scrolling when clicking on navigation links
-    $('.nav-link').click(function(e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 1000); // Adjust the animation speed here (in milliseconds)
-    });
-});
