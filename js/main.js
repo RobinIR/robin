@@ -127,7 +127,7 @@ async function handleSubmit(event) {
         });
 
         if (response.ok) {
-                status.innerHTML = "<p style='text-align: center; font-weight: bold; color: #33dca5; font-size: 24px; padding: 10px;'>Thanks for your Email! </</</p>";
+                status.innerHTML = "<p style='text-align: center; font-weight: bold; color: #33dca5; font-size: 20px; padding: 10px;'>Thanks for your Email ! </</</p>";
                 form.reset();
         } else {
             const responseData = await response.json();
