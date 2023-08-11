@@ -372,7 +372,7 @@ html {
   color: var(--light);
 }
 
-.portfolio-item .portfolio-btn {
+/* .portfolio-item .portfolio-btn {
   position: absolute;
   width: 0;
   height: 0;
@@ -400,7 +400,7 @@ html {
 
 .portfolio-item:hover i {
   opacity: 1;
-}
+} */
 
 @media (max-width: 767px) {
   
@@ -485,7 +485,7 @@ html {
   height: 220px;
   position: relative;
   border-radius: 0;
-  margin: 0; 
+  margin-top: 2rem; 
 }
 
 .portfolio .portfolio-item figure:hover img {

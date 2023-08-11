@@ -112,9 +112,23 @@
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById("my-form-status");
+const sendButton = form.querySelector('button[type="submit"]');
+const inputFields = form.querySelectorAll('input, textarea');
+
+// Function to check if all fields are filled
+function areAllFieldsFilled() {
+    return Array.from(inputFields).every(field => field.value.trim() !== '');
+}
+
+inputFields.forEach(input => {
+    input.addEventListener('input', () => {
+        sendButton.disabled = !areAllFieldsFilled();
+    });
+});
 
 async function handleSubmit(event) {
     event.preventDefault();
+    sendButton.disabled = true; // Disable the button before submission
     const data = new FormData(event.target);
 
     try {
@@ -127,8 +141,8 @@ async function handleSubmit(event) {
         });
 
         if (response.ok) {
-                status.innerHTML = "<p style='text-align: center; font-weight: bold; color: #33dca5; font-size: 20px; padding: 10px;'>Thanks for your Email ! </</</p>";
-                form.reset();
+            status.innerHTML = "<p style='text-align: center; font-weight: bold; color: #33dca5; font-size: 20px; padding: 10px;'>Thanks for your Email ! </p>";
+            form.reset();
         } else {
             const responseData = await response.json();
             if (responseData.hasOwnProperty('errors')) {
@@ -139,6 +153,9 @@ async function handleSubmit(event) {
         }
     } catch (error) {
         status.innerHTML = "Oops! There was a problem submitting your form.";
+    } finally {
+        sendButton.disabled = true; // Disable the button after submission
     }
 }
+
 form.addEventListener("submit", handleSubmit);
